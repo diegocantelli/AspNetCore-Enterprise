@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 
 namespace NSE.Identitidade.API.Controllers
 {
+    [Route("api/identidade")]
     public class AuthController : Controller
     {
         private readonly SignInManager<IdentityUser> _signInManager;
@@ -18,6 +19,8 @@ namespace NSE.Identitidade.API.Controllers
             _signInManager = signInManager;
             _userManager = userManager;
         }
+
+        [HttpPost("nova-conta")]
         public async Task<IActionResult> Registrar(UsuarioRegistro usuarioRegistro)
         {
             if (!ModelState.IsValid) return BadRequest();
@@ -42,6 +45,7 @@ namespace NSE.Identitidade.API.Controllers
             return BadRequest();
         }
 
+        [HttpPost("autenticar")]
         public async Task<IActionResult> Login(Usuariologin usuariologin)
         {
             if (!ModelState.IsValid) return BadRequest();
