@@ -44,7 +44,17 @@ namespace NSE.Identitidade.API.Controllers
 
         public async Task<IActionResult> Login(Usuariologin usuariologin)
         {
+            if (!ModelState.IsValid) return BadRequest();
 
+            var result = await _signInManager.PasswordSignInAsync(usuariologin.Email, usuariologin.Senha,
+                isPersistent: false, lockoutOnFailure: true);
+
+            if (result.Succeeded)
+            {
+                return Ok();
+            }
+
+            return BadRequest();
         }
 
 
