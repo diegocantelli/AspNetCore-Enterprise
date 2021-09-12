@@ -1,5 +1,7 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Options;
+using NSE.Identitidade.API.Extensions;
 using NSE.Identitidade.API.Models;
 using System;
 using System.Collections.Generic;
@@ -16,11 +18,17 @@ namespace NSE.Identitidade.API.Controllers
     {
         private readonly SignInManager<IdentityUser> _signInManager;
         private readonly UserManager<IdentityUser> _userManager;
+        private readonly AppSettings _appSettings;
 
-        public AuthController(SignInManager<IdentityUser> signInManager, UserManager<IdentityUser> userManager)
+
+        public AuthController(
+            SignInManager<IdentityUser> signInManager, 
+            UserManager<IdentityUser> userManager,
+            IOptions<AppSettings> appSettings )
         {
             _signInManager = signInManager;
             _userManager = userManager;
+            _appSettings = appSettings.Value;
         }
 
         [HttpPost("nova-conta")]
@@ -85,7 +93,7 @@ namespace NSE.Identitidade.API.Controllers
             }
 
             var identityClaims = new ClaimsIdentity();
-            identityClaims.AddClaims(claims);
+            identityClaims.AddClaims(claims); 
 
         }
 
