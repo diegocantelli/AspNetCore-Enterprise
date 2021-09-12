@@ -52,7 +52,7 @@ namespace NSE.Identitidade.API.Controllers
             {
                 // Em caso de usuário criado com sucesso, já faz o login do mesmo no sistema
                 await _signInManager.SignInAsync(user, isPersistent: false);
-                return Ok();
+                return Ok(await GerarJwt(usuarioRegistro.Email));
             }
 
             return BadRequest();
@@ -68,7 +68,7 @@ namespace NSE.Identitidade.API.Controllers
 
             if (result.Succeeded)
             {
-                return Ok();
+                return Ok(await GerarJwt(usuariologin.Email));
             }
 
             return BadRequest();
