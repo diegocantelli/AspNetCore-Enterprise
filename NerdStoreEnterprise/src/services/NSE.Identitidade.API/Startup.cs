@@ -61,8 +61,8 @@ namespace NSE.Identitidade.API
                     IssuerSigningKey = new SymmetricSecurityKey(key),
                     ValidateIssuer = true,
                     ValidateAudience = true,
-                    ValidAudience = "x",
-                    ValidIssuer = "x"
+                    ValidAudience = appSettings.ValidoEm,
+                    ValidIssuer = appSettings.Emissor
                 };
             });
 
