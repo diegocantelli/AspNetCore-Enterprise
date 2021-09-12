@@ -12,6 +12,7 @@ using Microsoft.Extensions.Logging;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using NSE.Identitidade.API.Data;
+using NSE.Identitidade.API.Extensions;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -39,6 +40,12 @@ namespace NSE.Identitidade.API
                 .AddRoles<IdentityRole>()
                 .AddEntityFrameworkStores<ApplicationDbContext>()
                 .AddDefaultTokenProviders();
+
+            var appsettingSection = Configuration.GetSection("AppSettings");
+            services.Configure<AppSettings>(appsettingSection);
+
+            var appSettings = appsettingSection.Get<AppSettings>();
+            var key = Encoding.ASCII.GetBytes(appSettings.Secret);
 
             services.AddAuthentication(options =>
             {
