@@ -3,7 +3,9 @@ using Microsoft.AspNetCore.Mvc;
 using NSE.Identitidade.API.Models;
 using System;
 using System.Collections.Generic;
+using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
+using System.Security.Claims;
 using System.Threading.Tasks;
 
 namespace NSE.Identitidade.API.Controllers
@@ -62,6 +64,32 @@ namespace NSE.Identitidade.API.Controllers
             return BadRequest();
         }
 
+        private async Task<UsuarioRespostaLogin> GerarJwt(string email)
+        {
+            var user = await _userManager.FindByEmailAsync(email);
+            var claims = await _userManager.GetClaimsAsync(user);
+            var userRoles = await _userManager.GetRolesAsync(user);
 
+            claims.Add(new Claim(JwtRegisteredClaimNames.Sub, user.Id));
+            claims.Add(new Claim(JwtRegisteredClaimNames.Email, user.Email));
+            claims.Add(new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()));
+            //Quando o token vai expirar
+            claims.Add(new Claim(JwtRegisteredClaimNames.Nbf, ToUnixEpochDate(DateTime.Now).ToString()));
+            //Quando o token foi emitido
+            claims.Add(new Claim(JwtRegisteredClaimNames.Iat, ToUnixEpochDate(DateTime.Now).ToString(), ClaimValueTypes.Integer64));
+
+            //Adicionando os papeis do usuário como claims
+            foreach (var userRole in userRoles)
+            {
+                claims.Add(new Claim("role", userRole));
+            }
+
+            var identityClaims = new ClaimsIdentity();
+            identityClaims.AddClaims(claims);
+
+        }
+
+        private static long ToUnixEpochDate(DateTime date) =>
+            (long)Math.Round((date.ToUniversalTime() - new DateTimeOffset(year: 1970, month: 1, day: 1, hour: 0, minute:0, second: 0, TimeSpan.Zero)).TotalSeconds);
     }
 }
