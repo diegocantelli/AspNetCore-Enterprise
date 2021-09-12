@@ -14,9 +14,8 @@ using System.Threading.Tasks;
 
 namespace NSE.Identitidade.API.Controllers
 {
-    [ApiController]
     [Route("api/identidade")]
-    public class AuthController : Controller
+    public class AuthController : MainController
     {
         private readonly SignInManager<IdentityUser> _signInManager;
         private readonly UserManager<IdentityUser> _userManager;
@@ -36,7 +35,7 @@ namespace NSE.Identitidade.API.Controllers
         [HttpPost("nova-conta")]
         public async Task<IActionResult> Registrar(UsuarioRegistro usuarioRegistro)
         {
-            if (!ModelState.IsValid) return BadRequest();
+            if (!ModelState.IsValid) return CustomResponse(ModelState);
 
             var user = new IdentityUser
             {
@@ -50,28 +49,38 @@ namespace NSE.Identitidade.API.Controllers
 
             if (result.Succeeded)
             {
-                // Em caso de usuário criado com sucesso, já faz o login do mesmo no sistema
-                await _signInManager.SignInAsync(user, isPersistent: false);
-                return Ok(await GerarJwt(usuarioRegistro.Email));
+                return CustomResponse(await GerarJwt(usuarioRegistro.Email));
             }
 
-            return BadRequest();
+            foreach (var error in result.Errors)
+            {
+                AdicionarErrosProcessamento(error.Description);
+            }
+
+            return CustomResponse();
         }
 
         [HttpPost("autenticar")]
         public async Task<IActionResult> Login(Usuariologin usuariologin)
         {
-            if (!ModelState.IsValid) return BadRequest();
+            if (!ModelState.IsValid) return CustomResponse(ModelState);
 
             var result = await _signInManager.PasswordSignInAsync(usuariologin.Email, usuariologin.Senha,
                 isPersistent: false, lockoutOnFailure: true);
 
             if (result.Succeeded)
             {
-                return Ok(await GerarJwt(usuariologin.Email));
+                return CustomResponse(await GerarJwt(usuariologin.Email));
             }
 
-            return BadRequest();
+            if (result.IsLockedOut)
+            {
+                AdicionarErrosProcessamento("Usuário bloqueado devido ao número de tentativas de login incorretas.");
+                return CustomResponse();
+            }
+
+            AdicionarErrosProcessamento("Usuário ou senha inexistentes");
+            return CustomResponse();
         }
 
         private async Task<UsuarioRespostaLogin> GerarJwt(string email)
