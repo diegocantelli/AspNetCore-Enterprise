@@ -29,7 +29,7 @@ namespace NSE.Identitidade.API.Controllers
 
             foreach (var erro in erros)
             {
-                AdicionarErrosProcessamento(erro.ErrorMessage)
+                AdicionarErrosProcessamento(erro.ErrorMessage);
             }
 
             return CustomResponse();
@@ -37,7 +37,7 @@ namespace NSE.Identitidade.API.Controllers
 
         protected bool OperacaoValida()
         {
-            return Erros.Any();
+            return !Erros.Any();
         }
 
         protected void AdicionarErrosProcessamento(string erro)
