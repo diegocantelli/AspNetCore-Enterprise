@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "LM1WTtXthyvr3SPbgFWWYyJb4ApyyzsKz0iHae/s/rtecJ66TGAz/QL2SI7SAG64V8nyKGevbjNBlTkqP0KZAw==",
+  "dgSpecHash": "Co5rgjDxteX5/X47ulvaYF1ed3WEwvSmsBLnWcs2IQt6OgciIMxOlzzVXzYGRM0x9wvXX8dQfPOV061kaBUzgw==",
   "success": true,
   "projectFilePath": "C:\\Users\\pc-cantelli\\Documents\\Programação 2018\\Asp.Net Core\\Desenvolvedor.io\\NerdStoreEnterprise\\NerdStoreEnterprise\\src\\web\\NSE.WebApp.MVC\\NSE.WebApp.MVC.csproj",
   "expectedPackageFiles": [
@@ -20,7 +20,8 @@
     "C:\\Users\\pc-cantelli\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.2\\system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512",
     "C:\\Users\\pc-cantelli\\.nuget\\packages\\system.text.encoding.codepages\\4.5.1\\system.text.encoding.codepages.4.5.1.nupkg.sha512",
     "C:\\Users\\pc-cantelli\\.nuget\\packages\\system.text.json\\4.7.2\\system.text.json.4.7.2.nupkg.sha512",
-    "C:\\Users\\pc-cantelli\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.3\\system.threading.tasks.extensions.4.5.3.nupkg.sha512"
+    "C:\\Users\\pc-cantelli\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.3\\system.threading.tasks.extensions.4.5.3.nupkg.sha512",
+    "C:\\Users\\pc-cantelli\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.18\\microsoft.netcore.app.host.win-x64.3.1.18.nupkg.sha512"
   ],
   "logs": []
 }
