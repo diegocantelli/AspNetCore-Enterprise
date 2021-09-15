@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;
@@ -17,6 +18,12 @@ namespace NSE.WebApp.MVC.Configuration
                     options.LoginPath = "/Login";
                     options.AccessDeniedPath = "acesso-negado";
                 });
+        }
+
+        public static void UseIdentityConfiguration(this IApplicationBuilder app)
+        {
+            app.UseAuthentication();
+            app.UseAuthorization();
         }
     }
 }
