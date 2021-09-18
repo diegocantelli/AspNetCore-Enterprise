@@ -339,8 +339,11 @@ C:\Users\pc-cantelli\Documents\Programação 2018\Asp.Net Core\Desenvolvedor.io\
 C:\Users\pc-cantelli\Documents\Programação 2018\Asp.Net Core\Desenvolvedor.io\NerdStoreEnterprise\NerdStoreEnterprise\src\web\NSE.WebApp.MVC\obj\Debug\netcoreapp3.1\NSE.WebApp.MVC.RazorCoreGenerate.cache
 C:\Users\pc-cantelli\Documents\Programação 2018\Asp.Net Core\Desenvolvedor.io\NerdStoreEnterprise\NerdStoreEnterprise\src\web\NSE.WebApp.MVC\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
 C:\Users\pc-cantelli\Documents\Programação 2018\Asp.Net Core\Desenvolvedor.io\NerdStoreEnterprise\NerdStoreEnterprise\src\web\NSE.WebApp.MVC\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
+C:\Users\pc-cantelli\Documents\Programação 2018\Asp.Net Core\Desenvolvedor.io\NerdStoreEnterprise\NerdStoreEnterprise\src\web\NSE.WebApp.MVC\obj\Debug\netcoreapp3.1\Razor\Views\Identidade\Login.cshtml.g.cs
+C:\Users\pc-cantelli\Documents\Programação 2018\Asp.Net Core\Desenvolvedor.io\NerdStoreEnterprise\NerdStoreEnterprise\src\web\NSE.WebApp.MVC\obj\Debug\netcoreapp3.1\Razor\Views\Identidade\Regitro.cshtml.g.cs
 C:\Users\pc-cantelli\Documents\Programação 2018\Asp.Net Core\Desenvolvedor.io\NerdStoreEnterprise\NerdStoreEnterprise\src\web\NSE.WebApp.MVC\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
 C:\Users\pc-cantelli\Documents\Programação 2018\Asp.Net Core\Desenvolvedor.io\NerdStoreEnterprise\NerdStoreEnterprise\src\web\NSE.WebApp.MVC\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\pc-cantelli\Documents\Programação 2018\Asp.Net Core\Desenvolvedor.io\NerdStoreEnterprise\NerdStoreEnterprise\src\web\NSE.WebApp.MVC\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_LoginPartial.cshtml.g.cs
 C:\Users\pc-cantelli\Documents\Programação 2018\Asp.Net Core\Desenvolvedor.io\NerdStoreEnterprise\NerdStoreEnterprise\src\web\NSE.WebApp.MVC\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
 C:\Users\pc-cantelli\Documents\Programação 2018\Asp.Net Core\Desenvolvedor.io\NerdStoreEnterprise\NerdStoreEnterprise\src\web\NSE.WebApp.MVC\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
 C:\Users\pc-cantelli\Documents\Programação 2018\Asp.Net Core\Desenvolvedor.io\NerdStoreEnterprise\NerdStoreEnterprise\src\web\NSE.WebApp.MVC\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs

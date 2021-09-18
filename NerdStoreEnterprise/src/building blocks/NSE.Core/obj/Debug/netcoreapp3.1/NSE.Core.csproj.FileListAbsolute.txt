@@ -1,7 +1,6 @@
 C:\Users\pc-cantelli\Documents\Programação 2018\Asp.Net Core\Desenvolvedor.io\NerdStoreEnterprise\NerdStoreEnterprise\src\building blocks\NSE.Core\bin\Debug\netcoreapp3.1\NSE.Core.deps.json
 C:\Users\pc-cantelli\Documents\Programação 2018\Asp.Net Core\Desenvolvedor.io\NerdStoreEnterprise\NerdStoreEnterprise\src\building blocks\NSE.Core\bin\Debug\netcoreapp3.1\NSE.Core.dll
 C:\Users\pc-cantelli\Documents\Programação 2018\Asp.Net Core\Desenvolvedor.io\NerdStoreEnterprise\NerdStoreEnterprise\src\building blocks\NSE.Core\bin\Debug\netcoreapp3.1\NSE.Core.pdb
-C:\Users\pc-cantelli\Documents\Programação 2018\Asp.Net Core\Desenvolvedor.io\NerdStoreEnterprise\NerdStoreEnterprise\src\building blocks\NSE.Core\obj\Debug\netcoreapp3.1\NSE.Core.csproj.AssemblyReference.cache
 C:\Users\pc-cantelli\Documents\Programação 2018\Asp.Net Core\Desenvolvedor.io\NerdStoreEnterprise\NerdStoreEnterprise\src\building blocks\NSE.Core\obj\Debug\netcoreapp3.1\NSE.Core.AssemblyInfoInputs.cache
 C:\Users\pc-cantelli\Documents\Programação 2018\Asp.Net Core\Desenvolvedor.io\NerdStoreEnterprise\NerdStoreEnterprise\src\building blocks\NSE.Core\obj\Debug\netcoreapp3.1\NSE.Core.AssemblyInfo.cs
 C:\Users\pc-cantelli\Documents\Programação 2018\Asp.Net Core\Desenvolvedor.io\NerdStoreEnterprise\NerdStoreEnterprise\src\building blocks\NSE.Core\obj\Debug\netcoreapp3.1\NSE.Core.csproj.CoreCompileInputs.cache

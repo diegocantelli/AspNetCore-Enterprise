@@ -6,7 +6,6 @@ C:\Users\pc-cantelli\Documents\Programação 2018\Asp.Net Core\Desenvolvedor.io\
 C:\Users\pc-cantelli\Documents\Programação 2018\Asp.Net Core\Desenvolvedor.io\NerdStoreEnterprise\NerdStoreEnterprise\src\services\NSE.Cliente.API\bin\Debug\netcoreapp3.1\NSE.Cliente.API.runtimeconfig.dev.json
 C:\Users\pc-cantelli\Documents\Programação 2018\Asp.Net Core\Desenvolvedor.io\NerdStoreEnterprise\NerdStoreEnterprise\src\services\NSE.Cliente.API\bin\Debug\netcoreapp3.1\NSE.Cliente.API.dll
 C:\Users\pc-cantelli\Documents\Programação 2018\Asp.Net Core\Desenvolvedor.io\NerdStoreEnterprise\NerdStoreEnterprise\src\services\NSE.Cliente.API\bin\Debug\netcoreapp3.1\NSE.Cliente.API.pdb
-C:\Users\pc-cantelli\Documents\Programação 2018\Asp.Net Core\Desenvolvedor.io\NerdStoreEnterprise\NerdStoreEnterprise\src\services\NSE.Cliente.API\obj\Debug\netcoreapp3.1\NSE.Cliente.API.csproj.AssemblyReference.cache
 C:\Users\pc-cantelli\Documents\Programação 2018\Asp.Net Core\Desenvolvedor.io\NerdStoreEnterprise\NerdStoreEnterprise\src\services\NSE.Cliente.API\obj\Debug\netcoreapp3.1\NSE.Cliente.API.AssemblyInfoInputs.cache
 C:\Users\pc-cantelli\Documents\Programação 2018\Asp.Net Core\Desenvolvedor.io\NerdStoreEnterprise\NerdStoreEnterprise\src\services\NSE.Cliente.API\obj\Debug\netcoreapp3.1\NSE.Cliente.API.AssemblyInfo.cs
 C:\Users\pc-cantelli\Documents\Programação 2018\Asp.Net Core\Desenvolvedor.io\NerdStoreEnterprise\NerdStoreEnterprise\src\services\NSE.Cliente.API\obj\Debug\netcoreapp3.1\NSE.Cliente.API.csproj.CoreCompileInputs.cache
