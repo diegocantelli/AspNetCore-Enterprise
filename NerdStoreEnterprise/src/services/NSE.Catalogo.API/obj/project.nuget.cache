@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "ZIn+pWT5Ubd0RJ/tRSTJzCo6k4qD/2wS/AFMWuaHLxMDs3F8s9966U8ECLg78LdVaFULL9gtwXybhqYyajCKXw==",
+  "dgSpecHash": "XqeqPw72QuksRvetv989ORz3DPkXJb3V74zlRu12muq1B8KKPGPMz3tOmiQ84irwb8gCgTP1Tboc7xDWCkzptQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\pc-cantelli\\Documents\\Programação 2018\\Asp.Net Core\\Desenvolvedor.io\\NerdStoreEnterprise\\NerdStoreEnterprise\\src\\services\\NSE.Catalogo.API\\NSE.Catalogo.API.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\pc-cantelli\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.10.14\\microsoft.visualstudio.azure.containers.tools.targets.1.10.14.nupkg.sha512"
+    "C:\\Users\\pc-cantelli\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.10.14\\microsoft.visualstudio.azure.containers.tools.targets.1.10.14.nupkg.sha512",
+    "C:\\Users\\pc-cantelli\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.18\\microsoft.netcore.app.host.win-x64.3.1.18.nupkg.sha512"
   ],
   "logs": []
 }

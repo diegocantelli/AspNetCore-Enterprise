@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "HHierJoiVhpchkhqciga8rQJZe79A61NadxZ9T2vqcK+rFTFDGUxbSPCP5xqeZ5uv/RVHwO4BMzojha773UI/A==",
+  "dgSpecHash": "Ms5jJXODtvgvchWrobwLgEq8CxXAef+s/jiJWgGAxuerSkHbtbFyn5zOVoYvF994krGmqA3oBTQR+U8rQLI7Hw==",
   "success": true,
   "projectFilePath": "C:\\Users\\pc-cantelli\\Documents\\Programação 2018\\Asp.Net Core\\Desenvolvedor.io\\NerdStoreEnterprise\\NerdStoreEnterprise\\src\\services\\NSE.Identitidade.API\\NSE.Identitidade.API.csproj",
   "expectedPackageFiles": [
@@ -115,7 +115,8 @@
     "C:\\Users\\pc-cantelli\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\pc-cantelli\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
     "C:\\Users\\pc-cantelli\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
-    "C:\\Users\\pc-cantelli\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512"
+    "C:\\Users\\pc-cantelli\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512",
+    "C:\\Users\\pc-cantelli\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.18\\microsoft.netcore.app.host.win-x64.3.1.18.nupkg.sha512"
   ],
   "logs": []
 }
