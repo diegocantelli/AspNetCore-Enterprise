@@ -29,9 +29,16 @@ namespace NSE.WebApp.MVC.Services
             return JsonSerializer.Deserialize<string>(await response.Content.ReadAsStringAsync());
         }
 
-        public Task<string> Registro(UsuarioRegistro usuarioRegistro)
+        public async Task<string> Registro(UsuarioRegistro usuarioRegistro)
         {
-            throw new NotImplementedException();
+            var registroContent = new StringContent(
+                JsonSerializer.Serialize(usuarioRegistro),
+                Encoding.UTF8,
+                "application/json");
+
+            var response = await _httpClient.PostAsync("http://localhost:43967/api/identidade/nova-conta", registroContent);
+
+            return JsonSerializer.Deserialize<string>(await response.Content.ReadAsStringAsync());
         }
     }
 }
