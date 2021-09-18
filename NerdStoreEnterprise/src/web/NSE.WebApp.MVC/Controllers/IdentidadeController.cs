@@ -30,6 +30,8 @@ namespace NSE.WebApp.MVC.Controllers
         {
             if (!ModelState.IsValid) return View(usuarioRegistro);
 
+            var resposta = await _autenticacaoService.Registro(usuarioRegistro);
+
             if (false) return View(usuarioRegistro);
             
             return RedirectToAction("Index", "Home");
@@ -47,6 +49,8 @@ namespace NSE.WebApp.MVC.Controllers
         public async Task<IActionResult> Login(UsuarioLogin usuarioLogin)
         {
             if (!ModelState.IsValid) return View(usuarioLogin);
+
+            var resposta = await _autenticacaoService.Login(usuarioLogin);
 
             if (false) return View(usuarioLogin);
 
