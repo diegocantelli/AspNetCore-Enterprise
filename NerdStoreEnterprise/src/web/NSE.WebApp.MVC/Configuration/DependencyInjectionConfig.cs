@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+﻿using Microsoft.AspNetCore.Http;
+using Microsoft.Extensions.DependencyInjection;
 using NSE.WebApp.MVC.Services;
 using System;
 using System.Collections.Generic;
@@ -12,6 +13,9 @@ namespace NSE.WebApp.MVC.Configuration
         public static void RegisterServices(this IServiceCollection services)
         {
             services.AddHttpClient<IAutenticacaoService, AutenticacaoService>();
+
+            // resolvendo a dependência do HttpContextAccessor para ficar disponível de forma singleton
+            services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
         }
     }
 }
