@@ -1,9 +1,12 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Mvc;
 using NSE.WebApp.MVC.Models;
 using NSE.WebApp.MVC.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Claims;
 using System.Threading.Tasks;
 
 namespace NSE.WebApp.MVC.Controllers
@@ -64,6 +67,10 @@ namespace NSE.WebApp.MVC.Controllers
             return RedirectToAction("Index","Home");
         }
 
+        private async Task RealizarLogin(UsuarioRespostaLogin resposta)
+        {
+            await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, new ClaimsPrincipal());
+        }
 
     }
 }
