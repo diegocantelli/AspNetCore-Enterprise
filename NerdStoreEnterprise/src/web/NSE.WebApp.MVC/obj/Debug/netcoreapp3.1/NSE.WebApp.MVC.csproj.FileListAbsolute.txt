@@ -354,3 +354,11 @@ C:\Users\pc-cantelli\Documents\Programação 2018\Asp.Net Core\Desenvolvedor.io\
 C:\Users\pc-cantelli\Documents\Programação 2018\Asp.Net Core\Desenvolvedor.io\NerdStoreEnterprise\NerdStoreEnterprise\src\web\NSE.WebApp.MVC\obj\Debug\netcoreapp3.1\NSE.WebApp.MVC.dll
 C:\Users\pc-cantelli\Documents\Programação 2018\Asp.Net Core\Desenvolvedor.io\NerdStoreEnterprise\NerdStoreEnterprise\src\web\NSE.WebApp.MVC\obj\Debug\netcoreapp3.1\NSE.WebApp.MVC.pdb
 C:\Users\pc-cantelli\Documents\Programação 2018\Asp.Net Core\Desenvolvedor.io\NerdStoreEnterprise\NerdStoreEnterprise\src\web\NSE.WebApp.MVC\obj\Debug\netcoreapp3.1\NSE.WebApp.MVC.genruntimeconfig.cache
+C:\Users\pc-cantelli\Documents\Programação 2018\Asp.Net Core\Desenvolvedor.io\NerdStoreEnterprise\NerdStoreEnterprise\src\web\NSE.WebApp.MVC\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\pc-cantelli\Documents\Programação 2018\Asp.Net Core\Desenvolvedor.io\NerdStoreEnterprise\NerdStoreEnterprise\src\web\NSE.WebApp.MVC\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\pc-cantelli\Documents\Programação 2018\Asp.Net Core\Desenvolvedor.io\NerdStoreEnterprise\NerdStoreEnterprise\src\web\NSE.WebApp.MVC\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+C:\Users\pc-cantelli\Documents\Programação 2018\Asp.Net Core\Desenvolvedor.io\NerdStoreEnterprise\NerdStoreEnterprise\src\web\NSE.WebApp.MVC\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
+C:\Users\pc-cantelli\Documents\Programação 2018\Asp.Net Core\Desenvolvedor.io\NerdStoreEnterprise\NerdStoreEnterprise\src\web\NSE.WebApp.MVC\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\pc-cantelli\Documents\Programação 2018\Asp.Net Core\Desenvolvedor.io\NerdStoreEnterprise\NerdStoreEnterprise\src\web\NSE.WebApp.MVC\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+C:\Users\pc-cantelli\Documents\Programação 2018\Asp.Net Core\Desenvolvedor.io\NerdStoreEnterprise\NerdStoreEnterprise\src\web\NSE.WebApp.MVC\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\pc-cantelli\Documents\Programação 2018\Asp.Net Core\Desenvolvedor.io\NerdStoreEnterprise\NerdStoreEnterprise\src\web\NSE.WebApp.MVC\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
