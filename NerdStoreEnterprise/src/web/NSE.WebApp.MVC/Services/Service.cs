@@ -1,4 +1,5 @@
-﻿using System;
+﻿using NSE.WebApp.MVC.Extensions;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
@@ -16,7 +17,7 @@ namespace NSE.WebApp.MVC.Services
                 case 403:
                 case 404:
                 case 500:
-                    throw new Exception();
+                    throw new CustomHttpRequestException(response.StatusCode);
 
                 case 400:
                     return false;
