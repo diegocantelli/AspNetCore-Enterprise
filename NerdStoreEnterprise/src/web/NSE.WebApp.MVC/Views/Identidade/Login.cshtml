@@ -1,7 +1,7 @@
 ﻿@model NSE.WebApp.MVC.Models.UsuarioRegistro
 
 @{
-    ViewData["Title"] = "Registro";
+    ViewData["Title"] = "Login";
 }
 
 <h1>@ViewData["Title"]</h1>
@@ -9,9 +9,9 @@
     <div class="col-md-12">
         <section>
             <form method="post">
-                <h4> Registre-se e comece a comprar hoje mesmo</h4>
+                <h4> Seja bem vindo e boas compras</h4>
                 <hr />
-
+                <vc:summary></vc:summary>
                 <div class="form-group">
                     <label asp-for="Email"></label>
                     <input asp-for="Email" class="form-control" />
