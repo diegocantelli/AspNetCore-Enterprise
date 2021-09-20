@@ -24,7 +24,12 @@ namespace NSE.WebApp.MVC.Configuration
             }
             else
             {
-                app.UseExceptionHandler("/Home/Error");
+                // este middeware irá tratar apenas os erros de servidor que por algum motivo não foram interceptados pelo nosso
+                // middleware
+                app.UseExceptionHandler("/erro/500");
+
+                //este middle irá tratar todos os erros que possuem status code e que foram tratados pelo nosso middleware
+                app.UseStatusCodePagesWithRedirects("/erro/{0}");
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
