@@ -27,13 +27,11 @@ namespace NSE.WebApp.MVC.Services
             {
                 return new UsuarioRespostaLogin
                 {
-                    ResponseResult = JsonSerializer.Deserialize<ResponseResult>(await response.Content.ReadAsStringAsync(),
-                     new JsonSerializerOptions { PropertyNameCaseInsensitive = true })
+                    ResponseResult = await DeserializarObjetoResponse<ResponseResult>(response)
                 };
             }
 
-            return JsonSerializer.Deserialize<UsuarioRespostaLogin>(await response.Content.ReadAsStringAsync(),
-                new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
+            return await DeserializarObjetoResponse<UsuarioRespostaLogin>(response);
         }
 
         public async Task<UsuarioRespostaLogin> Registro(UsuarioRegistro usuarioRegistro)
@@ -46,13 +44,11 @@ namespace NSE.WebApp.MVC.Services
             {
                 return new UsuarioRespostaLogin
                 {
-                    ResponseResult = JsonSerializer.Deserialize<ResponseResult>(await response.Content.ReadAsStringAsync(),
-                     new JsonSerializerOptions { PropertyNameCaseInsensitive = true })
+                    ResponseResult = await DeserializarObjetoResponse<ResponseResult>(response)
                 };
             }
 
-            return JsonSerializer.Deserialize<UsuarioRespostaLogin>(await response.Content.ReadAsStringAsync(),
-                new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
+            return await DeserializarObjetoResponse<UsuarioRespostaLogin>(response);
         }
     }
 }

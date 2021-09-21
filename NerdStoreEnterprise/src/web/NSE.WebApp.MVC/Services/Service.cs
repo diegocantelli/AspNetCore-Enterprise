@@ -18,6 +18,12 @@ namespace NSE.WebApp.MVC.Services
                 Encoding.UTF8,
                 "application/json");
         }
+
+        protected async Task<T> DeserializarObjetoResponse<T>(HttpResponseMessage httpResponseMessage)
+        {
+            return JsonSerializer.Deserialize<T>(await httpResponseMessage.Content.ReadAsStringAsync(),
+                     new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
+        }
         protected bool TratarErrosResponse(HttpResponseMessage response)
         {
             switch ((int)response.StatusCode)
