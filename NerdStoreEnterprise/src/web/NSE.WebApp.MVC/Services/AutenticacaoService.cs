@@ -19,10 +19,7 @@ namespace NSE.WebApp.MVC.Services
         }
         public async Task<UsuarioRespostaLogin> Login(UsuarioLogin usuarioLogin)
         {
-            var loginContent = new StringContent(
-                JsonSerializer.Serialize(usuarioLogin),
-                Encoding.UTF8,
-                "application/json");
+            var loginContent = ObterConteudo(usuarioLogin);
 
             var response = await _httpClient.PostAsync("https://localhost:44323/api/identidade/autenticar", loginContent);
 
@@ -41,10 +38,7 @@ namespace NSE.WebApp.MVC.Services
 
         public async Task<UsuarioRespostaLogin> Registro(UsuarioRegistro usuarioRegistro)
         {
-            var registroContent = new StringContent(
-                JsonSerializer.Serialize(usuarioRegistro),
-                Encoding.UTF8,
-                "application/json");
+            var registroContent = ObterConteudo(usuarioRegistro);
 
             var response = await _httpClient.PostAsync("https://localhost:44323/api/identidade/nova-conta", registroContent);
 
