@@ -18,6 +18,7 @@ namespace NSE.WebApp.MVC.Services
 
         public AutenticacaoService(HttpClient httpClient, IOptions<AppSettings> settings)
         {
+            httpClient.BaseAddress = new Uri(_appSettings.AutenticacaoUrl);
             _httpClient = httpClient;
             _appSettings = settings.Value;
         }
@@ -25,7 +26,7 @@ namespace NSE.WebApp.MVC.Services
         {
             var loginContent = ObterConteudo(usuarioLogin);
 
-            var response = await _httpClient.PostAsync("https://localhost:44323/api/identidade/autenticar", loginContent);
+            var response = await _httpClient.PostAsync("/api/identidade/autenticar", loginContent);
 
             if (!TratarErrosResponse(response))
             {
@@ -42,7 +43,7 @@ namespace NSE.WebApp.MVC.Services
         {
             var registroContent = ObterConteudo(usuarioRegistro);
 
-            var response = await _httpClient.PostAsync("https://localhost:44323/api/identidade/nova-conta", registroContent);
+            var response = await _httpClient.PostAsync("/api/identidade/nova-conta", registroContent);
 
             if (!TratarErrosResponse(response))
             {
