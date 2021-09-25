@@ -1,11 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using NSE.Core.DomainObjects;
+using System;
 
 namespace NSE.Catalogo.API.Models
 {
-    public class Produto
+    public class Produto : Entity
     {
         public string Nome { get; set; }
         public string Descricao { get; set; }
