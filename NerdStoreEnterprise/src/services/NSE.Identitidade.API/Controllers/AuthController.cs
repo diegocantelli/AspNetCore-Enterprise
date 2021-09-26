@@ -4,6 +4,7 @@ using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using NSE.Identitidade.API.Extensions;
 using NSE.Identitidade.API.Models;
+using NSE.WebApi.Core.Identidade;
 using System;
 using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
