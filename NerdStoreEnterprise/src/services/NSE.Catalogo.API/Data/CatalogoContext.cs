@@ -13,5 +13,12 @@ namespace NSE.Catalogo.API.Data
             :base(options){}
 
         public DbSet<Produto> Produtos { get; set; }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            // irá aplicar as configurações com base em todas as classes que herdem IEntityTypeConfiguration
+            // que estejam configurando uma entidade definida neste contexto
+            modelBuilder.ApplyConfigurationsFromAssembly(typeof(CatalogoContext).Assembly);
+        }
     }
 }
