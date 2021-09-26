@@ -1,7 +1,8 @@
-﻿using Microsoft.AspNetCore.Builder;
+﻿    using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using NSE.WebApi.Core.Identidade;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -29,7 +30,7 @@ namespace NSE.Identitidade.API.Configuration
             app.UseRouting();
 
             // As configs do identity precisam estar entre UseRouting e UseEndpoints
-            app.UseIdentityConfiguration();
+            app.UseAuthConfiguration();
 
             app.UseEndpoints(endpoints =>
             {

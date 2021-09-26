@@ -30,30 +30,8 @@ namespace NSE.Identitidade.API.Configuration
                 .AddEntityFrameworkStores<ApplicationDbContext>()
                 .AddDefaultTokenProviders();
 
-            var appsettingSection = Configuration.GetSection("AppSettings");
-            services.Configure<AppSettings>(appsettingSection);
+            services.AddJwtConfiguration(Configuration);
 
-            var appSettings = appsettingSection.Get<AppSettings>();
-            var key = Encoding.ASCII.GetBytes(appSettings.Secret);
-
-            services.AddAuthentication(options =>
-            {
-                options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
-                options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
-            }).AddJwtBearer(bearerOption =>
-            {
-                bearerOption.RequireHttpsMetadata = true;
-                bearerOption.SaveToken = true;
-                bearerOption.TokenValidationParameters = new TokenValidationParameters
-                {
-                    ValidateIssuerSigningKey = true,
-                    IssuerSigningKey = new SymmetricSecurityKey(key),
-                    ValidateIssuer = true,
-                    ValidateAudience = true,
-                    ValidAudience = appSettings.ValidoEm,
-                    ValidIssuer = appSettings.Emissor
-                };
-            });
             return services;
         }
 
