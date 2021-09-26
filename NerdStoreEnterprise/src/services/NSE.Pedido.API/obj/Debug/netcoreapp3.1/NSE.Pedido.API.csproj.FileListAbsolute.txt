@@ -17,3 +17,4 @@ C:\Users\pc-cantelli\Documents\Programação 2018\Asp.Net Core\Desenvolvedor.io\
 C:\Users\pc-cantelli\Documents\Programação 2018\Asp.Net Core\Desenvolvedor.io\NerdStoreEnterprise\NerdStoreEnterprise\src\services\NSE.Pedido.API\obj\Debug\netcoreapp3.1\NSE.Pedido.API.dll
 C:\Users\pc-cantelli\Documents\Programação 2018\Asp.Net Core\Desenvolvedor.io\NerdStoreEnterprise\NerdStoreEnterprise\src\services\NSE.Pedido.API\obj\Debug\netcoreapp3.1\NSE.Pedido.API.pdb
 C:\Users\pc-cantelli\Documents\Programação 2018\Asp.Net Core\Desenvolvedor.io\NerdStoreEnterprise\NerdStoreEnterprise\src\services\NSE.Pedido.API\obj\Debug\netcoreapp3.1\NSE.Pedido.API.genruntimeconfig.cache
+C:\Users\pc-cantelli\Documents\Programação 2018\Asp.Net Core\Desenvolvedor.io\NerdStoreEnterprise\NerdStoreEnterprise\src\services\NSE.Pedido.API\obj\Debug\netcoreapp3.1\NSE.Pedido.API.csproj.AssemblyReference.cache
