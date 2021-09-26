@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using NSE.Catalogo.API.Models;
+using NSE.Core.Data;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,6 +11,7 @@ namespace NSE.Catalogo.API.Data.Repository
     public class ProdutoRepository : IProdutoRepository
     {
         private readonly CatalogoContext _catalogoContext;
+        public IUnitOfWork UnitOfWork => _catalogoContext; 
 
         public ProdutoRepository(CatalogoContext catalogoContext)
         {
