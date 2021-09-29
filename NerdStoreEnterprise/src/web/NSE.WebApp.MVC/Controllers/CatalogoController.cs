@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using NSE.WebApp.MVC.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,6 +9,13 @@ namespace NSE.WebApp.MVC.Controllers
 {
     public class CatalogoController : MainController
     {
+        private readonly ICatalogoService _catalogoService;
+
+        public CatalogoController(ICatalogoService catalogoService)
+        {
+            _catalogoService = catalogoService;
+        }
+
         [HttpGet]
         [Route("")]
         [Route("Vitrine")]

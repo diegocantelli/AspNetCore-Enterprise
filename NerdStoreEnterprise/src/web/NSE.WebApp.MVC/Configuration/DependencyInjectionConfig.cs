@@ -14,6 +14,7 @@ namespace NSE.WebApp.MVC.Configuration
         public static void RegisterServices(this IServiceCollection services)
         {
             services.AddHttpClient<IAutenticacaoService, AutenticacaoService>();
+            services.AddHttpClient<ICatalogoService, CatalogoService>();
 
             // resolvendo a dependência do HttpContextAccessor para ficar disponível de forma singleton
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
