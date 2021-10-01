@@ -9,11 +9,11 @@ using System.Threading.Tasks;
 
 namespace NSE.WebApp.MVC.Services.Handlers
 {
-    public class HttpClientDelegatingHandlers : DelegatingHandler
+    public class HttpClientAuthorizationDelegatingHandler : DelegatingHandler
     {
         private readonly IUser _user;
 
-        public HttpClientDelegatingHandlers(IUser user)
+        public HttpClientAuthorizationDelegatingHandler(IUser user)
         {
             _user = user;
         }
