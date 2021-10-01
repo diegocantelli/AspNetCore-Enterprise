@@ -21,14 +21,18 @@ namespace NSE.WebApp.MVC.Controllers
         [Route("Vitrine")]
         public async Task<IActionResult> Index()
         {
-            return View();
+            var produtos = _catalogoService.ObterTodos();
+
+            return View(produtos);
         }
 
         [HttpGet]
         [Route("produto-detalhe/{id}")]
         public async Task<IActionResult> ProdutoDetalhe(Guid id)
         {
-            return View();
+            var produto = _catalogoService.ObterPorId(id);
+
+            return View(produto);
         }
     }
 }

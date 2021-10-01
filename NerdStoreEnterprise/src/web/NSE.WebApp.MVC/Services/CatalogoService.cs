@@ -16,7 +16,7 @@ namespace NSE.WebApp.MVC.Services
 
         public CatalogoService(HttpClient httpClient, IOptions<AppSettings> settings)
         {
-            httpClient.BaseAddress = new Uri(_appSettings.AutenticacaoUrl);
+            httpClient.BaseAddress = new Uri(_appSettings.CatalogoUrl);
             _httpClient = httpClient;
             _appSettings = settings.Value;
         }
