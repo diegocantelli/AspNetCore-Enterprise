@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace NSE.WebApp.MVC.Services
 {
-    public interface ICatalogServiceRefit
+    public interface ICatalogoServiceRefit
     {
         [Get("/catalogo/produtos/")]
         Task<IEnumerable<ProdutoViewModel>> ObterTodos();

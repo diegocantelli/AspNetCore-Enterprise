@@ -26,7 +26,7 @@ namespace NSE.WebApp.MVC.Configuration
                 options.BaseAddress = new Uri(configuration.GetSection("CatalogoUrl").Value);
             })
             .AddHttpMessageHandler<HttpClientAuthorizationDelegatingHandler>()
-            .AddTypedClient(Refit.RestService.For<ICatalogServiceRefit>);
+            .AddTypedClient(Refit.RestService.For<ICatalogoServiceRefit>);
 
             // resolvendo a dependência do HttpContextAccessor para ficar disponível de forma singleton
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
