@@ -37,6 +37,7 @@ namespace NSE.WebApp.MVC.Configuration
             services.AddHttpClient<ICatalogoService, CatalogoService>()
                 .AddHttpMessageHandler<HttpClientAuthorizationDelegatingHandler>()
                 .AddPolicyHandler(retryWaitPolicy);
+
                 //.AddTransientHttpErrorPolicy(
                 //    // em caso de erro, irá tentar 3 vezes a requisição http antes de desistir
                 //    p => p.WaitAndRetryAsync(retryCount: 3, sleepDurationProvider: _ => TimeSpan.FromMilliseconds(600)));
