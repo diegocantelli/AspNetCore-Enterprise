@@ -24,7 +24,12 @@ namespace NSE.WebApp.MVC.Configuration
 
             services.AddHttpClient<ICatalogoService, CatalogoService>()
                 .AddHttpMessageHandler<HttpClientAuthorizationDelegatingHandler>()
-                .AddPolicyHandler(PollyExtensions.EsperarTentar());
+                .AddPolicyHandler(PollyExtensions.EsperarTentar())
+                .AddTransientHttpErrorPolicy(
+                    // O circuit breaker é uma máquina de estados que irá controlar os erros de qualquer conexão, de forma global
+                    // desde que de forma consecutiva
+                    p => p.CircuitBreakerAsync(handledEventsAllowedBeforeBreaking: 5, TimeSpan.FromSeconds(30))
+                );
 
                 //.AddTransientHttpErrorPolicy(
                 //    // em caso de erro, irá tentar 3 vezes a requisição http antes de desistir
