@@ -28,6 +28,19 @@ namespace NSE.WebApp.MVC.Controllers
             return View();
         }
 
+        [Route("sistema-indisponivel")]
+        public IActionResult SistemaIndisponivel()
+        {
+            var errorModel = new ErrorViewModel
+            {
+                Mensagem = "O Sistema está temporariamente indisponível.",
+                Titulo = "Sistema indisponível",
+                ErrorCode = 500
+            };
+            return View("Error", errorModel);
+        }
+
+
         [Route("erro/{id:length(3,3)}")]
         public IActionResult Error(int id)
         {
