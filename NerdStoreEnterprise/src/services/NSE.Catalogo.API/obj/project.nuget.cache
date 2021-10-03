@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "z0J6yFtvbwTZV7uzRdgy8DSve+5yWPIoXxHzKOXCX1Npj7iUdpLkA4DoIVJvmJ7xbbTD1OHD/4TfzXGCXUTYrQ==",
+  "dgSpecHash": "VuU6b9hITf3j5MX2Q4yzQ190HI/YAy3Bf6q4hC/9hkpiiqJC4iiAKPzMeSvvpkRZKIz2XQ95zFjtCuNP2u+3BA==",
   "success": true,
   "projectFilePath": "C:\\Users\\pc-cantelli\\Documents\\Programação 2018\\Asp.Net Core\\Desenvolvedor.io\\NerdStoreEnterprise\\NerdStoreEnterprise\\src\\services\\NSE.Catalogo.API\\NSE.Catalogo.API.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\pc-cantelli\\.nuget\\packages\\fluentvalidation\\8.6.2\\fluentvalidation.8.6.2.nupkg.sha512",
     "C:\\Users\\pc-cantelli\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\3.1.1\\microsoft.aspnetcore.authentication.jwtbearer.3.1.1.nupkg.sha512",
     "C:\\Users\\pc-cantelli\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.0\\microsoft.bcl.asyncinterfaces.1.1.0.nupkg.sha512",
     "C:\\Users\\pc-cantelli\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.0\\microsoft.bcl.hashcode.1.1.0.nupkg.sha512",

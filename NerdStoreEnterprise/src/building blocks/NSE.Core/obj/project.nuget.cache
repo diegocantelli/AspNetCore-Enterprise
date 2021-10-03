@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "jtbaZdWC7kLqZQcV/YceFcUJ9p0kEPbU6ct8ZdE1cEpzfSM6scrHxj8Hdt62RCkfaJ36RYybIzd6uRJhCskuBQ==",
+  "dgSpecHash": "Q4q3ljuTH+Tj+eIdsjD10Sb3Ug6oXo/ZIhOjs+8s/TCMErC4cxkn027l7uX2bjSgOnEm2QNBqVPzxFuDjkQqcg==",
   "success": true,
   "projectFilePath": "C:\\Users\\pc-cantelli\\Documents\\Programação 2018\\Asp.Net Core\\Desenvolvedor.io\\NerdStoreEnterprise\\NerdStoreEnterprise\\src\\building blocks\\NSE.Core\\NSE.Core.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\pc-cantelli\\.nuget\\packages\\fluentvalidation\\8.6.2\\fluentvalidation.8.6.2.nupkg.sha512",
+    "C:\\Users\\pc-cantelli\\.nuget\\packages\\system.componentmodel.annotations\\4.4.1\\system.componentmodel.annotations.4.4.1.nupkg.sha512"
+  ],
   "logs": []
 }
