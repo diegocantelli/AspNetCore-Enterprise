@@ -1,11 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "JgtYPJWUwTj0eu5JBG9SktNztn2k2A4hZKYB3g7R/Ff/Gq2pWeeLnqIk9t56pEZZzs1f480cV2lAGWbkTSK1rg==",
+  "dgSpecHash": "AwSP5b1epSnu68oY7gTFjYO2pJVPU23k/3LTx/1S7CIZwh5lCw7lAPFEvPG4hIhxwklFt9mrga2LDdObOR9QpQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\pc-cantelli\\Documents\\Programação 2018\\Asp.Net Core\\Desenvolvedor.io\\NerdStoreEnterprise\\NerdStoreEnterprise\\src\\services\\NSE.Cliente.API\\NSE.Cliente.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\pc-cantelli\\.nuget\\packages\\fluentvalidation\\8.6.2\\fluentvalidation.8.6.2.nupkg.sha512",
     "C:\\Users\\pc-cantelli\\.nuget\\packages\\mediatr\\8.0.1\\mediatr.8.0.1.nupkg.sha512",
+    "C:\\Users\\pc-cantelli\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\8.0.0\\mediatr.extensions.microsoft.dependencyinjection.8.0.0.nupkg.sha512",
+    "C:\\Users\\pc-cantelli\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\2.0.0\\microsoft.extensions.dependencyinjection.abstractions.2.0.0.nupkg.sha512",
     "C:\\Users\\pc-cantelli\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.10.14\\microsoft.visualstudio.azure.containers.tools.targets.1.10.14.nupkg.sha512",
     "C:\\Users\\pc-cantelli\\.nuget\\packages\\system.componentmodel.annotations\\4.4.1\\system.componentmodel.annotations.4.4.1.nupkg.sha512",
     "C:\\Users\\pc-cantelli\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.18\\microsoft.netcore.app.host.win-x64.3.1.18.nupkg.sha512"
