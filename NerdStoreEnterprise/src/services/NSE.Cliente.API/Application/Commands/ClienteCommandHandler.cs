@@ -6,6 +6,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
+using NSE.Cliente.API.Models;
+using NSE.Cliente.API.Application.Events;
 
 namespace NSE.Cliente.API.Application.Commands
 {
@@ -16,7 +18,8 @@ namespace NSE.Cliente.API.Application.Commands
         {
             if (!message.EhValido()) return message.ValidationResult;
 
-            //var cliente = new Cliente(message.Id, message.Nome, message.Cpf, message.Email);
+            //new Cliente(message.Id, message.Nome, message.Cpf, message.Email);
+            var cliente = new ClienteEntity(message.Id, message.Nome, message.Cpf, message.Email);
 
             // já existe o cpf no banco
             if (true)
@@ -24,6 +27,10 @@ namespace NSE.Cliente.API.Application.Commands
                 AdicionarErro("Cpf já cadastrado.");
                 return ValidationResult;
             }
+
+            //Adicionar cliente no repositorio
+
+            cliente.AdicionarEvento(new ClienteRegistradoEvent(message.Id, message.Nome, message.Cpf, message.Email));
 
             return message.ValidationResult;
         }

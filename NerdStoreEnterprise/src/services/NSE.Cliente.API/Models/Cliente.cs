@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace NSE.Cliente.API.Models
 {
-    public class Cliente : Entity, IAggregateRoot
+    public class ClienteEntity : Entity, IAggregateRoot
     {
         public string Nome { get; private set; }
         public Email Email { get; private set; }
