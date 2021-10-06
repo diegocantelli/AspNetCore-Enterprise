@@ -15,8 +15,8 @@ namespace NSE.Cliente.API.Models
         public Endereco Endereco { get; private set; }
 
         //necessário para o EF
-        protected Cliente(){ }
-        public Cliente(Guid id, string nome, string email, string cpf)
+        protected ClienteEntity(){ }
+        public ClienteEntity(Guid id, string nome, string email, string cpf)
         {
             Id = id;
             Nome = nome;
