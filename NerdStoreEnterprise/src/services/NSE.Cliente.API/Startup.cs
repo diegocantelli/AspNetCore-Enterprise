@@ -9,6 +9,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using NSE.Cliente.API.Application.Commands;
+using NSE.Cliente.API.Application.Events;
 using NSE.Core.Mediator;
 using System;
 using System.Collections.Generic;
@@ -34,6 +35,7 @@ namespace NSE.Cliente.API
             services.AddMediatR(typeof(Startup));
             services.AddScoped<IMediatorHandler, MediatorHandler>();
             services.AddScoped<IRequestHandler<RegistrarClienteCommand, ValidationResult>, ClienteCommandHandler>();
+            services.AddScoped<INotificationHandler<ClienteRegistradoEvent>, ClienteEventHandler>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
