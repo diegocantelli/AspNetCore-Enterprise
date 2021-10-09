@@ -3,21 +3,21 @@ using Microsoft.AspNetCore.Mvc.ModelBinding;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
+using System.Text;
 
-namespace NSE.Identitidade.API.Controllers
+namespace NSE.WebApi.Core.Controllers
 {
     [ApiController]
     public abstract class MainController : Controller
     {
         protected ICollection<string> Erros = new List<string>();
-        
+
         protected ActionResult CustomResponse(object result = null)
         {
             if (OperacaoValida()) return Ok(result);
 
             // ValidationProblemDetails -> é um padrão de como a api deve responder aos erros
-            return BadRequest(new ValidationProblemDetails(new Dictionary<string, string[]> 
+            return BadRequest(new ValidationProblemDetails(new Dictionary<string, string[]>
             {
                 {"Mensagens", Erros.ToArray() }
             }));
