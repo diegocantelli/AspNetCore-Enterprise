@@ -1,7 +1,9 @@
 ﻿using EasyNetQ;
 using FluentValidation.Results;
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using NSE.Cliente.API.Application.Commands;
+using NSE.Core.Mediator;
 using NSE.Core.Messages.Integration;
 using System;
 using System.Collections.Generic;
@@ -36,6 +38,16 @@ namespace NSE.Cliente.API.services
         private async Task<ValidationResult> RegistrarCliente(UsuarioRegistradoIntegrationEvent message)
         {
             var clienteCommand = new RegistrarClienteCommand(message.Id, message.Nome, message.Email, message.Cpf);
+            ValidationResult sucesso;
+
+            // criando um serviço do mediator dentro de um contexto singleton
+            using (var scope = _provider.CreateScope())
+            {
+                var mediator = scope.ServiceProvider.GetRequiredService<IMediatorHandler>();
+                sucesso = await mediator.EnviarComando(clienteCommand);
+            }
+
+            return sucesso;
         }
     }
 }
