@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
@@ -6,6 +6,11 @@
 
   <ItemGroup>
     <PackageReference Include="EasyNetQ" Version="5.1.1"></PackageReference>
+    <PackageReference Include="Polly" Version="7.2.1"></PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\NSE.Core\NSE.Core.csproj" />
   </ItemGroup>
 
 </Project>

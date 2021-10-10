@@ -119,6 +119,10 @@
             "EasyNetQ": {
               "target": "Package",
               "version": "[5.1.1, )"
+            },
+            "Polly": {
+              "target": "Package",
+              "version": "[7.2.1, )"
             }
           },
           "imports": [
