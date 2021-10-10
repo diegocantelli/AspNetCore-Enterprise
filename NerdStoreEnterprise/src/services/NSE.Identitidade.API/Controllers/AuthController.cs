@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
+using NSE.Core.Messages.Integration;
 using NSE.Identitidade.API.Extensions;
 using NSE.Identitidade.API.Models;
 using NSE.WebApi.Core.Controllers;
@@ -60,6 +61,14 @@ namespace NSE.Identitidade.API.Controllers
             }
 
             return CustomResponse();
+        }
+
+        private async Task<ResponseMessage> RegistrarCliente(UsuarioRegistro usuarioRegistro)
+        {
+            var usuario = await _userManager.FindByEmailAsync(usuarioRegistro.Email);
+
+            var usuarioRegistrado = new UsuarioRegistradoIntegrationEvent(
+                Guid.Parse(usuario.Id), usuarioRegistro.Nome, usuarioRegistro.Email, usuarioRegistro.Cpf);
         }
 
         [HttpPost("autenticar")]
