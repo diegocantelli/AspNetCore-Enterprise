@@ -1617,6 +1617,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
+          "FluentValidation": "8.6.2",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "3.1.1"
         },
         "compile": {

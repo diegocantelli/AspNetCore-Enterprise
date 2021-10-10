@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "ZYiH/aBT10V83GFOYTuw+2+QXaUnABHcUdgk1hjqi6EDk2bbUBluwLSxmarxE20wYced8jvnUiPwW2fsDNXPAQ==",
+  "dgSpecHash": "FTY2NMvldn4a7VwhBmfFDX6gw2OI2c/5ZKI96dmdfvbgl6gMBF7NxdAmh2mUeDZfvndJbmC8WsALUprS6wD9pw==",
   "success": true,
   "projectFilePath": "C:\\Users\\pc-cantelli\\Documents\\Programação 2018\\Asp.Net Core\\Desenvolvedor.io\\NerdStoreEnterprise\\NerdStoreEnterprise\\src\\building blocks\\NSE.WebApi.Cpre\\NSE.WebApi.Core.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\pc-cantelli\\.nuget\\packages\\fluentvalidation\\8.6.2\\fluentvalidation.8.6.2.nupkg.sha512",
     "C:\\Users\\pc-cantelli\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\3.1.1\\microsoft.aspnetcore.authentication.jwtbearer.3.1.1.nupkg.sha512",
     "C:\\Users\\pc-cantelli\\.nuget\\packages\\microsoft.csharp\\4.3.0\\microsoft.csharp.4.3.0.nupkg.sha512",
     "C:\\Users\\pc-cantelli\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\5.5.0\\microsoft.identitymodel.jsonwebtokens.5.5.0.nupkg.sha512",
@@ -18,6 +19,7 @@
     "C:\\Users\\pc-cantelli\\.nuget\\packages\\system.collections.nongeneric\\4.3.0\\system.collections.nongeneric.4.3.0.nupkg.sha512",
     "C:\\Users\\pc-cantelli\\.nuget\\packages\\system.collections.specialized\\4.3.0\\system.collections.specialized.4.3.0.nupkg.sha512",
     "C:\\Users\\pc-cantelli\\.nuget\\packages\\system.componentmodel\\4.3.0\\system.componentmodel.4.3.0.nupkg.sha512",
+    "C:\\Users\\pc-cantelli\\.nuget\\packages\\system.componentmodel.annotations\\4.4.1\\system.componentmodel.annotations.4.4.1.nupkg.sha512",
     "C:\\Users\\pc-cantelli\\.nuget\\packages\\system.componentmodel.primitives\\4.3.0\\system.componentmodel.primitives.4.3.0.nupkg.sha512",
     "C:\\Users\\pc-cantelli\\.nuget\\packages\\system.componentmodel.typeconverter\\4.3.0\\system.componentmodel.typeconverter.4.3.0.nupkg.sha512",
     "C:\\Users\\pc-cantelli\\.nuget\\packages\\system.diagnostics.debug\\4.3.0\\system.diagnostics.debug.4.3.0.nupkg.sha512",
