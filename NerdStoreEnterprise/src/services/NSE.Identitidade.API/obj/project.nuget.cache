@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "2kw9BpgnIBQLh959bxWzwtd2vJ2+xYo79WKPP0JspDMvtl8P1C9yue+LF83cgrLcA0KZ+LupNzC17gMkZeaNbg==",
+  "dgSpecHash": "XLPFd8nGBOzAkznJyLkVw0zQS/w3MUzeXF/5+YPvQQI+4+prxi0YDjh1ylGm2e4B+EX4nDJBHjMZms/G4zlSUg==",
   "success": true,
   "projectFilePath": "C:\\Users\\pc-cantelli\\Documents\\Programação 2018\\Asp.Net Core\\Desenvolvedor.io\\NerdStoreEnterprise\\NerdStoreEnterprise\\src\\services\\NSE.Identitidade.API\\NSE.Identitidade.API.csproj",
   "expectedPackageFiles": [
@@ -27,7 +27,7 @@
     "C:\\Users\\pc-cantelli\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\3.1.3\\microsoft.extensions.caching.abstractions.3.1.3.nupkg.sha512",
     "C:\\Users\\pc-cantelli\\.nuget\\packages\\microsoft.extensions.caching.memory\\3.1.3\\microsoft.extensions.caching.memory.3.1.3.nupkg.sha512",
     "C:\\Users\\pc-cantelli\\.nuget\\packages\\microsoft.extensions.configuration\\3.1.3\\microsoft.extensions.configuration.3.1.3.nupkg.sha512",
-    "C:\\Users\\pc-cantelli\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\3.1.3\\microsoft.extensions.configuration.abstractions.3.1.3.nupkg.sha512",
+    "C:\\Users\\pc-cantelli\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\5.0.0\\microsoft.extensions.configuration.abstractions.5.0.0.nupkg.sha512",
     "C:\\Users\\pc-cantelli\\.nuget\\packages\\microsoft.extensions.configuration.binder\\3.1.3\\microsoft.extensions.configuration.binder.3.1.3.nupkg.sha512",
     "C:\\Users\\pc-cantelli\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\3.1.3\\microsoft.extensions.dependencyinjection.3.1.3.nupkg.sha512",
     "C:\\Users\\pc-cantelli\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\3.1.3\\microsoft.extensions.dependencyinjection.abstractions.3.1.3.nupkg.sha512",
@@ -38,7 +38,7 @@
     "C:\\Users\\pc-cantelli\\.nuget\\packages\\microsoft.extensions.logging\\3.1.3\\microsoft.extensions.logging.3.1.3.nupkg.sha512",
     "C:\\Users\\pc-cantelli\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\3.1.3\\microsoft.extensions.logging.abstractions.3.1.3.nupkg.sha512",
     "C:\\Users\\pc-cantelli\\.nuget\\packages\\microsoft.extensions.options\\3.1.3\\microsoft.extensions.options.3.1.3.nupkg.sha512",
-    "C:\\Users\\pc-cantelli\\.nuget\\packages\\microsoft.extensions.primitives\\3.1.3\\microsoft.extensions.primitives.3.1.3.nupkg.sha512",
+    "C:\\Users\\pc-cantelli\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.0\\microsoft.extensions.primitives.5.0.0.nupkg.sha512",
     "C:\\Users\\pc-cantelli\\.nuget\\packages\\microsoft.identity.client\\3.0.8\\microsoft.identity.client.3.0.8.nupkg.sha512",
     "C:\\Users\\pc-cantelli\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\5.5.0\\microsoft.identitymodel.jsonwebtokens.5.5.0.nupkg.sha512",
     "C:\\Users\\pc-cantelli\\.nuget\\packages\\microsoft.identitymodel.logging\\5.5.0\\microsoft.identitymodel.logging.5.5.0.nupkg.sha512",

@@ -10,7 +10,6 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.10.14" />
     <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="8.0.0" />
-    <PackageReference Include="EasyNetQ" Version="5.1.1" />
   </ItemGroup>
 
   <ItemGroup>
@@ -21,6 +20,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\building blocks\NSE.Core\NSE.Core.csproj" />
+    <ProjectReference Include="..\..\building blocks\NSE.MessageBus\NSE.MessageBus.csproj" />
     <ProjectReference Include="..\..\building blocks\NSE.WebApi.Cpre\NSE.WebApi.Core.csproj" />
   </ItemGroup>
 

@@ -1,11 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "JRUYiZ+tk/heci7pXjrUsWY39aodAClnHt5THnkuTzUbEHj20wmOEBuQErVd/BY3BkLUozh7u/+Omm/MSCLzGw==",
+  "dgSpecHash": "1OJs9S/s26GVDHIAz91d3YZW+78d3eQy6916PR7Z9GsH8IA0j9tgIrQ/1H7NNO0QPN1rQGv5eXFFGaKV3chBoQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\pc-cantelli\\Documents\\Programação 2018\\Asp.Net Core\\Desenvolvedor.io\\NerdStoreEnterprise\\NerdStoreEnterprise\\src\\building blocks\\NSE.Core\\NSE.Core.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\pc-cantelli\\.nuget\\packages\\fluentvalidation\\8.6.2\\fluentvalidation.8.6.2.nupkg.sha512",
     "C:\\Users\\pc-cantelli\\.nuget\\packages\\mediatr\\8.0.1\\mediatr.8.0.1.nupkg.sha512",
+    "C:\\Users\\pc-cantelli\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\5.0.0\\microsoft.extensions.configuration.abstractions.5.0.0.nupkg.sha512",
+    "C:\\Users\\pc-cantelli\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.0\\microsoft.extensions.primitives.5.0.0.nupkg.sha512",
     "C:\\Users\\pc-cantelli\\.nuget\\packages\\system.componentmodel.annotations\\4.4.1\\system.componentmodel.annotations.4.4.1.nupkg.sha512"
   ],
   "logs": []

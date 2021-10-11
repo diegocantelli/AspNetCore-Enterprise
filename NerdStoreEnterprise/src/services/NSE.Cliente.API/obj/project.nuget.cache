@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "z2Df1BsQ0GZ5FEhVhhiaXV07vPXweCGT0aCilH4j4lD0EgmsQXTwDaB3G6X9Ji8lQ/NAqWkc3LqywY809Xs9VA==",
+  "dgSpecHash": "bl5ZdHJbsGYo0lGRTVGB536TY66mGRHmH0HQl7mxMVf3ZuNnb4bH+eK6k8p9g+2GxNGSCrttTd5eTgVq8umS4A==",
   "success": true,
   "projectFilePath": "C:\\Users\\pc-cantelli\\Documents\\Programação 2018\\Asp.Net Core\\Desenvolvedor.io\\NerdStoreEnterprise\\NerdStoreEnterprise\\src\\services\\NSE.Cliente.API\\NSE.Cliente.API.csproj",
   "expectedPackageFiles": [
@@ -9,7 +9,9 @@
     "C:\\Users\\pc-cantelli\\.nuget\\packages\\mediatr\\8.0.1\\mediatr.8.0.1.nupkg.sha512",
     "C:\\Users\\pc-cantelli\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\8.0.0\\mediatr.extensions.microsoft.dependencyinjection.8.0.0.nupkg.sha512",
     "C:\\Users\\pc-cantelli\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\3.1.1\\microsoft.aspnetcore.authentication.jwtbearer.3.1.1.nupkg.sha512",
-    "C:\\Users\\pc-cantelli\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\2.0.0\\microsoft.extensions.dependencyinjection.abstractions.2.0.0.nupkg.sha512",
+    "C:\\Users\\pc-cantelli\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\5.0.0\\microsoft.extensions.configuration.abstractions.5.0.0.nupkg.sha512",
+    "C:\\Users\\pc-cantelli\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\5.0.0\\microsoft.extensions.dependencyinjection.abstractions.5.0.0.nupkg.sha512",
+    "C:\\Users\\pc-cantelli\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.0\\microsoft.extensions.primitives.5.0.0.nupkg.sha512",
     "C:\\Users\\pc-cantelli\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\5.5.0\\microsoft.identitymodel.jsonwebtokens.5.5.0.nupkg.sha512",
     "C:\\Users\\pc-cantelli\\.nuget\\packages\\microsoft.identitymodel.logging\\5.5.0\\microsoft.identitymodel.logging.5.5.0.nupkg.sha512",
     "C:\\Users\\pc-cantelli\\.nuget\\packages\\microsoft.identitymodel.protocols\\5.5.0\\microsoft.identitymodel.protocols.5.5.0.nupkg.sha512",
@@ -17,6 +19,7 @@
     "C:\\Users\\pc-cantelli\\.nuget\\packages\\microsoft.identitymodel.tokens\\5.5.0\\microsoft.identitymodel.tokens.5.5.0.nupkg.sha512",
     "C:\\Users\\pc-cantelli\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.10.14\\microsoft.visualstudio.azure.containers.tools.targets.1.10.14.nupkg.sha512",
     "C:\\Users\\pc-cantelli\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\pc-cantelli\\.nuget\\packages\\polly\\7.2.1\\polly.7.2.1.nupkg.sha512",
     "C:\\Users\\pc-cantelli\\.nuget\\packages\\rabbitmq.client\\6.0.0\\rabbitmq.client.6.0.0.nupkg.sha512",
     "C:\\Users\\pc-cantelli\\.nuget\\packages\\system.componentmodel.annotations\\4.4.1\\system.componentmodel.annotations.4.4.1.nupkg.sha512",
     "C:\\Users\\pc-cantelli\\.nuget\\packages\\system.identitymodel.tokens.jwt\\5.5.0\\system.identitymodel.tokens.jwt.5.5.0.nupkg.sha512",
