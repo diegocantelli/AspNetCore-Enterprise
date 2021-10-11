@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "ZHgM/1lLEgaNtgGgsi9B4Lm8wPNLZHhWKFu5Lngg/zUNjCYA1drRnbI+cZ9NK07FP8XlxYyx356DKFL1MZqZug==",
+  "dgSpecHash": "j7QmKhIj+q0nN2KY8I5ljZMkDhKNDFSPFs+QQmk9nTcR2vGvql+fkSjihLiA4hm5obPbhbrUvDRX+B+K8mHb6A==",
   "success": true,
   "projectFilePath": "C:\\Users\\pc-cantelli\\Documents\\Programação 2018\\Asp.Net Core\\Desenvolvedor.io\\NerdStoreEnterprise\\NerdStoreEnterprise\\src\\building blocks\\NSE.MessageBus\\NSE.MessageBus.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\pc-cantelli\\.nuget\\packages\\easynetq\\5.1.1\\easynetq.5.1.1.nupkg.sha512",
     "C:\\Users\\pc-cantelli\\.nuget\\packages\\fluentvalidation\\8.6.2\\fluentvalidation.8.6.2.nupkg.sha512",
     "C:\\Users\\pc-cantelli\\.nuget\\packages\\mediatr\\8.0.1\\mediatr.8.0.1.nupkg.sha512",
+    "C:\\Users\\pc-cantelli\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\5.0.0\\microsoft.extensions.dependencyinjection.abstractions.5.0.0.nupkg.sha512",
     "C:\\Users\\pc-cantelli\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
     "C:\\Users\\pc-cantelli\\.nuget\\packages\\polly\\7.2.1\\polly.7.2.1.nupkg.sha512",
     "C:\\Users\\pc-cantelli\\.nuget\\packages\\rabbitmq.client\\6.0.0\\rabbitmq.client.6.0.0.nupkg.sha512",
