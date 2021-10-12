@@ -8,7 +8,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace NSE.Cliente.API.Configuration
+namespace NSE.Identitidade.API.Configuration
 {
     public static class MessageBusConfig
     {

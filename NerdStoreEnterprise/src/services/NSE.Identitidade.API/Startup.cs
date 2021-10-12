@@ -36,6 +36,8 @@ namespace NSE.Identitidade.API
 
             services.AddApiConfiguration();
 
+            services.AddMessageBusConfiguration(Configuration);
+
             services.AddSwaggerGen(options => 
             {
                 options.SwaggerDoc("v1", new OpenApiInfo

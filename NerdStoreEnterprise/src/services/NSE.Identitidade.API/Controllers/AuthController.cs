@@ -6,6 +6,7 @@ using Microsoft.IdentityModel.Tokens;
 using NSE.Core.Messages.Integration;
 using NSE.Identitidade.API.Extensions;
 using NSE.Identitidade.API.Models;
+using NSE.MessageBus;
 using NSE.WebApi.Core.Controllers;
 using NSE.WebApi.Core.Identidade;
 using System;
@@ -26,17 +27,19 @@ namespace NSE.Identitidade.API.Controllers
         private readonly AppSettings _appSettings;
 
         // classe do EasyNetQ
-        private IBus _bus;
+        private IMessageBus _bus;
 
 
         public AuthController(
             SignInManager<IdentityUser> signInManager, 
             UserManager<IdentityUser> userManager,
-            IOptions<AppSettings> appSettings)
+            IOptions<AppSettings> appSettings,
+            IMessageBus bus)
         {
             _signInManager = signInManager;
             _userManager = userManager;
             _appSettings = appSettings.Value;
+            _bus = bus;
         }
 
         [HttpPost("nova-conta")]
@@ -56,7 +59,14 @@ namespace NSE.Identitidade.API.Controllers
 
             if (result.Succeeded)
             {
-                var sucesso = await RegistrarCliente(usuarioRegistro);
+                var clienteResult = await RegistrarCliente(usuarioRegistro);
+
+                if (!clienteResult.ValidationResult.IsValid)
+                {
+                    await _userManager.DeleteAsync(user);
+                    return CustomResponse(clienteResult.ValidationResult);
+                }
+
                 return CustomResponse(await GerarJwt(usuarioRegistro.Email));
             }
 
@@ -74,9 +84,6 @@ namespace NSE.Identitidade.API.Controllers
 
             var usuarioRegistrado = new UsuarioRegistradoIntegrationEvent(
                 Guid.Parse(usuario.Id), usuarioRegistro.Nome, usuarioRegistro.Email, usuarioRegistro.Cpf);
-
-            // criando a conexão com o RabbitMQ
-            _bus = RabbitHutch.CreateBus("host=localhost:5672");
 
             var sucesso = await _bus.RequestAsync<UsuarioRegistradoIntegrationEvent, ResponseMessage>(usuarioRegistrado);
 
