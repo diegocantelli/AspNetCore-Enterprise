@@ -22,6 +22,8 @@ namespace NSE.MessageBus
 
         public bool IsConnected => _bus?.IsConnected ?? false;
 
+        public IAdvancedBus AdvancedBus => _bus?.Advanced;
+
         public void Dispose()
         {
             _bus?.Dispose();
